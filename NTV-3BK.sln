@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTV-3BK", "NTV-3BK\NTV-3BK.csproj", "{2F814D90-6FDA-4A96-A312-C0AA1A156E72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verkefni", "Verkefni\Verkefni.csproj", "{2F814D90-6FDA-4A96-A312-C0AA1A156E72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
