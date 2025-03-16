@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Verkefni1  // <-- Match the same namespace as in WeatherData.cs
+namespace Verkefni1 
 {
     class Program
     {

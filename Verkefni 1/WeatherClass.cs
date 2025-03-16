@@ -1,6 +1,5 @@
 ﻿// WeatherData.cs
-namespace Verkefni1  // <-- Make sure this matches your Program.cs namespace
-{
+namespace Verkefni1
     public class WeatherData
     {
         private double temperature;

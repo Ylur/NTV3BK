@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
+  <diagram name="Page-1" id="LYzJaxf4jR4bsgn-JaId">
+    <mxGraphModel dx="1027" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jgPWm6CHgMMtntZKPeRX-15" target="jgPWm6CHgMMtntZKPeRX-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-15" value="&lt;font&gt;&lt;b style=&quot;&quot;&gt;Customer&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;font-family: Arial; text-align: start; text-wrap-mode: nowrap;&quot;&gt;PK customer_id&lt;/span&gt;&lt;/font&gt;&lt;br&gt;Name&lt;br&gt;Address&lt;br&gt;City&lt;br&gt;State&lt;br&gt;ZIP" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="40" y="39" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jgPWm6CHgMMtntZKPeRX-16" target="jgPWm6CHgMMtntZKPeRX-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="jgPWm6CHgMMtntZKPeRX-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="39" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-16" value="&lt;font&gt;&lt;b style=&quot;&quot;&gt;Customer&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;font-family: Arial; text-align: start; text-wrap-mode: nowrap;&quot;&gt;PK customer_id&lt;/span&gt;&lt;/font&gt;&lt;br&gt;Name&lt;br&gt;Address&lt;br&gt;City&lt;br&gt;State&lt;br&gt;ZIP" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="39" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jgPWm6CHgMMtntZKPeRX-17" target="jgPWm6CHgMMtntZKPeRX-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-17" value="&lt;b&gt;Clerks&lt;br&gt;PK clerk_id&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;clerk_name&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="520" y="39" width="161" height="161" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-19" value="&lt;span style=&quot;font-family: Arial; font-size: 18px; font-weight: 700; text-align: start; text-wrap-mode: nowrap;&quot;&gt;Order_Items&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; font-weight: 700; text-align: start; text-wrap-mode: nowrap;&quot;&gt;PK, FK order_id&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; font-weight: 700; text-align: start; text-wrap-mode: nowrap;&quot;&gt;PK, FK item_id&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;quantity&lt;br&gt;line_total&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="280" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jgPWm6CHgMMtntZKPeRX-21" target="jgPWm6CHgMMtntZKPeRX-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-21" value="&lt;span style=&quot;font-family: Arial; font-size: 18px; font-weight: 700; text-align: start; text-wrap-mode: nowrap;&quot;&gt;Items&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; font-weight: 700; text-align: start; text-wrap-mode: nowrap;&quot;&gt;PK item_id&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;description&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;unit_price&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 14px; font-weight: 700; text-align: start; text-wrap-mode: nowrap;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 18px; font-weight: 700; text-align: start; text-wrap-mode: nowrap;&quot;&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-27" value="&lt;span style=&quot;font-family: Arial; font-size: 16px; font-weight: 700; text-align: start; text-wrap-mode: nowrap;&quot;&gt;Sample Data From Sales Order&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Arial; font-size: 16px; font-weight: 700; text-align: start; text-wrap-mode: nowrap;&quot;&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="520" width="710" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jgPWm6CHgMMtntZKPeRX-28" value="&lt;b&gt;Legend:&lt;br&gt;PK&lt;/b&gt; Primary Key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; Foreign Key" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="640" y="410" width="100" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
