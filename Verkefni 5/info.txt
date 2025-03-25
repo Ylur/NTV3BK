@@ -1,0 +1,28 @@
+Available API Endpoints
+Your API now offers full CRUD operations for all entities:
+
+Students
+
+GET /api/students - List all students
+GET /api/students/{id} - Get a specific student
+POST /api/students - Create a new student
+PUT /api/students/{id} - Update a student
+DELETE /api/students/{id} - Delete a student
+
+
+Groups
+
+GET /api/groups - List all groups
+GET /api/groups/{id} - Get a specific group
+POST /api/groups - Create a new group
+PUT /api/groups/{id} - Update a group
+DELETE /api/groups/{id} - Delete a group
+
+
+Marks
+
+GET /api/marks - List all marks
+GET /api/marks/{id} - Get a specific mark
+POST /api/marks - Create a new mark
+PUT /api/marks/{id} - Update a mark
+DELETE /api/marks/{id} - Delete a mark
