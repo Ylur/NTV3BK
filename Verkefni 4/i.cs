@@ -32,7 +32,7 @@ namespace SchoolDB
         public int StudentId { get; set; }
         public int SubjectId { get; set; }
         public DateTime Date { get; set; }
-        public int Value { get; set; }  // Changed from 'mark' to 'Value' for clarity
+        public int Value { get; set; }  
         
         // Navigation properties
         public Student Student { get; set; }
