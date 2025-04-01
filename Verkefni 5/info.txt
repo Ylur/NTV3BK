@@ -1,5 +1,5 @@
 Available API Endpoints
-Your API now offers full CRUD operations for all entities:
+CRUD operations for all entities:
 
 Students
 
