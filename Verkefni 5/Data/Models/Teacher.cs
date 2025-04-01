@@ -7,5 +7,5 @@ public class Teacher
     public required string LastName { get; set; }
     
     // Navigation property
-    public ICollection<SubjectTeacher>? SubjectTeachers { get; set; } = new List<SubjectTeacher>();
+    public List<Subject>? Subjects { get; set; } = new List<Subject>();
 }

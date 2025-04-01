@@ -12,7 +12,7 @@ namespace Verkefni_5.Data
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public string DbPath { get; }
-        public DbSet<SubjectTeacher> SubjectTeachers { get; set; }
+      //  public DbSet<SubjectTeacher> SubjectTeachers { get; set; }
 
         public SchoolContext(DbContextOptions<SchoolContext> options)
             : base(options)
@@ -47,9 +47,11 @@ namespace Verkefni_5.Data
             modelBuilder.Entity<Teacher>()
                 .HasKey(t => t.TeacherId);
 
+            /*
             modelBuilder.Entity<SubjectTeacher>()
                 .HasKey(st => new { st.SubjectId, st.TeacherId });
-
+                */
+                
             // Configure relationships
             // Student - Group (Many-to-One)
             modelBuilder.Entity<Student>()
@@ -69,7 +71,7 @@ namespace Verkefni_5.Data
                 .WithMany(s => s.Marks)
                 .HasForeignKey(m => m.SubjectId);
 
-            // SubjectTeacher - Subject (Many-to-One)
+          /*  // SubjectTeacher - Subject (Many-to-One)
             modelBuilder.Entity<SubjectTeacher>()
                 .HasOne(st => st.Subject)
                 .WithMany(s => s.SubjectTeachers)
@@ -80,6 +82,8 @@ namespace Verkefni_5.Data
                 .HasOne(st => st.Teacher)
                 .WithMany(t => t.SubjectTeachers)
                 .HasForeignKey(st => st.TeacherId);
+        */
         } 
+        
     }
 }

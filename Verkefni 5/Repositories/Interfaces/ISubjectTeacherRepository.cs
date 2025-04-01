@@ -1,3 +1,4 @@
+/*
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Verkefni_5.Data.Models;
@@ -10,3 +11,4 @@ namespace Verkefni_5.Repositories.Interfaces
         Task<IEnumerable<SubjectTeacher>> GetByTeacherIdAsync(int teacherId);
     }
 }
+*/

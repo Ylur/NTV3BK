@@ -1,4 +1,6 @@
-using System;
+ 
+ /*
+ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -81,3 +83,5 @@ namespace Verkefni_5.Controllers
         }
     }
 }
+
+*/

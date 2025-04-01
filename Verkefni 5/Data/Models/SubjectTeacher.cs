@@ -1,4 +1,4 @@
-namespace Verkefni_5.Data.Models;
+/* namespace Verkefni_5.Data.Models;
 
 public class SubjectTeacher
 {
@@ -9,3 +9,4 @@ public class SubjectTeacher
     public Subject? Subject { get; set; }
     public Teacher? Teacher { get; set; }
 }
+*/

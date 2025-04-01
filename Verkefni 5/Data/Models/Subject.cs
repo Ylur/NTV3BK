@@ -7,5 +7,5 @@ public class Subject
     
     // Navigation properties
     public ICollection<Mark>? Marks { get; set; } = new List<Mark>();
-    public ICollection<SubjectTeacher>? SubjectTeachers { get; set; } = new List<SubjectTeacher>();
+    public List<Teacher>? Teachers { get; set; } = new List<Teacher>();
 }

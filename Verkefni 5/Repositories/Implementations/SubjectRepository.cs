@@ -14,8 +14,8 @@ namespace Verkefni_5.Repositories.Implementations
         public async Task<IEnumerable<Subject>> GetSubjectsWithTeachersAsync()
         {
             return await _dbSet
-                .Include(s => s.SubjectTeachers)
-                    .ThenInclude(st => st.Teacher)
+                .Include(s => s.Marks)
+                    .ThenInclude(st => st.Student)
                 .ToListAsync();
         }
     }

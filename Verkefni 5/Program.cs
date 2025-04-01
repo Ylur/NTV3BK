@@ -27,7 +27,7 @@ builder.Services.AddScoped<IGroupRepository, GroupRepository>();
 builder.Services.AddScoped<IMarkRepository, MarkRepository>();
 builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
 builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
-builder.Services.AddScoped<ISubjectTeacherRepository, SubjectTeacherRepository>();
+//builder.Services.AddScoped<ISubjectTeacherRepository, SubjectTeacherRepository>();
 
 // Register Services
 builder.Services.AddScoped<IStudentService, StudentService>();
@@ -35,7 +35,7 @@ builder.Services.AddScoped<IGroupService, GroupService>();
 builder.Services.AddScoped<IMarkService, MarkService>();
 builder.Services.AddScoped<ISubjectService, SubjectService>();
 builder.Services.AddScoped<ITeacherService, TeacherService>();
-builder.Services.AddScoped<ISubjectTeacherService, SubjectTeacherService>();
+//builder.Services.AddScoped<ISubjectTeacherService, SubjectTeacherService>();
 
 var app = builder.Build();
 
@@ -76,9 +76,9 @@ using (var scope = app.Services.CreateScope())
             var mark2 = new Mark { StudentId = student2.StudentId, SubjectId = subject2.SubjectId, Date = DateTime.Now, Value = 90 };
             context.Marks.AddRange(mark1, mark2);
             
-            var st1 = new SubjectTeacher { SubjectId = subject1.SubjectId, TeacherId = teacher1.TeacherId };
-            var st2 = new SubjectTeacher { SubjectId = subject2.SubjectId, TeacherId = teacher2.TeacherId };
-            context.SubjectTeachers.AddRange(st1, st2);
+            //var st1 = new SubjectTeacher { SubjectId = subject1.SubjectId, TeacherId = teacher1.TeacherId };
+            //var st2 = new SubjectTeacher { SubjectId = subject2.SubjectId, TeacherId = teacher2.TeacherId };
+            //context.SubjectTeachers.AddRange(st1, st2);
             
             context.SaveChanges();
         }
