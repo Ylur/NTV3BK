@@ -11,12 +11,23 @@ namespace Verkefni_5.Data
         public DbSet<Mark> Marks { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
+        public string DbPath { get; }
         public DbSet<SubjectTeacher> SubjectTeachers { get; set; }
 
         public SchoolContext(DbContextOptions<SchoolContext> options)
             : base(options)
         {
+            var folder = Environment.SpecialFolder.LocalApplicationData;
+            var path = Environment.GetFolderPath(folder);
+            DbPath = System.IO.Path.Join(path, "school.db");
+            Console.WriteLine($"Database path: {DbPath}");
         }
+  
+
+    // The following configures EF to create a Sqlite database file in the
+    // special "local" folder for your platform.
+    protected override void OnConfiguring(DbContextOptionsBuilder options)
+        => options.UseSqlite($"Data Source={DbPath}");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
