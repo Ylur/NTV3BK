@@ -9,22 +9,22 @@ namespace SchoolDatabase
     public class Student
     {
         public int StudentId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public required string FirstName { get; set; }
+        public required string LastName { get; set; }
         public int GroupId { get; set; }
         
         // Navigation properties
-        public Group Group { get; set; }
-        public ICollection<Mark> Marks { get; set; }
+        public required Group Group { get; set; }
+        public required ICollection<Mark> Marks { get; set; }
     }
 
     public class Group
     {
         public int GroupId { get; set; }
-        public string Name { get; set; }
+        public required string Name { get; set; }
         
         // Navigation property
-        public ICollection<Student> Students { get; set; }
+        public required ICollection<Student> Students { get; set; }
     }
 
     public class Mark
@@ -36,31 +36,31 @@ namespace SchoolDatabase
         public int Value { get; set; }  // Changed from 'mark' to 'Value' for clarity
         
         // Navigation properties
-        public Student Student { get; set; }
-        public Subject Subject { get; set; }
+        public required Student Student { get; set; }
+        public required Subject Subject { get; set; }
     }
 
     public class Subject
     {
         public int SubjectId { get; set; }
-        public string Title { get; set; }
+        public required string Title { get; set; }
         
         // Navigation properties
-        public ICollection<Mark> Marks { get; set; }
-        public ICollection<SubjectTeacher> SubjectTeachers { get; set; }
+        public required ICollection<Mark> Marks { get; set; }
+        public required ICollection<Teacher> Teachers { get; set; }
     }
 
     public class Teacher
     {
         public int TeacherId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public required string FirstName { get; set; }
+        public required string LastName { get; set; }
         
         // Navigation property
-        public ICollection<SubjectTeacher> SubjectTeachers { get; set; }
+        public required List<Subject> Subjects { get; set; }
     }
 
-    public class SubjectTeacher
+   /* public class SubjectTeacher
     {
         public int SubjectId { get; set; }
         public int TeacherId { get; set; }
@@ -68,7 +68,8 @@ namespace SchoolDatabase
         // Navigation properties
         public Subject Subject { get; set; }
         public Teacher Teacher { get; set; }
-    }
+    }*/
+
 
     // DbContext class
     public class SchoolContext : DbContext
@@ -78,7 +79,7 @@ namespace SchoolDatabase
         public DbSet<Mark> Marks { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
-        public DbSet<SubjectTeacher> SubjectTeachers { get; set; }
+        //public DbSet<SubjectTeacher> SubjectTeachers { get; set; }
 
         public SchoolContext(DbContextOptions<SchoolContext> options)
             : base(options)
@@ -103,8 +104,8 @@ namespace SchoolDatabase
             modelBuilder.Entity<Teacher>()
                 .HasKey(t => t.TeacherId);
 
-            modelBuilder.Entity<SubjectTeacher>()
-                .HasKey(st => new { st.SubjectId, st.TeacherId });
+           // modelBuilder.Entity<Subject>()
+             //   .HasKey(st => new { st.SubjectId, st.TeacherId });
 
             // Configure relationships
             // Student - Group (Many-to-One)
@@ -125,7 +126,7 @@ namespace SchoolDatabase
                 .WithMany(s => s.Marks)
                 .HasForeignKey(m => m.SubjectId);
 
-            // SubjectTeacher - Subject (Many-to-One)
+           /* // SubjectTeacher - Subject (Many-to-One)
             modelBuilder.Entity<SubjectTeacher>()
                 .HasOne(st => st.Subject)
                 .WithMany(s => s.SubjectTeachers)
@@ -136,6 +137,7 @@ namespace SchoolDatabase
                 .HasOne(st => st.Teacher)
                 .WithMany(t => t.SubjectTeachers)
                 .HasForeignKey(st => st.TeacherId);
-        }
-    }
+                */
+        } 
+    } 
 }
