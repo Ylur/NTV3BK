@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Verkefni_5.DTOs
+namespace Verkefni_5.Data.DTOs
 {
     // Student DTOs
     public class StudentDto

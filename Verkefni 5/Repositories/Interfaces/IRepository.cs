@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using SchoolDatabase;
 
 namespace Verkefni_5.Repositories.Interfaces
 {

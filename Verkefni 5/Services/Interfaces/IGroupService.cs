@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Verkefni_5.DTOs;
+using Verkefni_5.Data.DTOs;
 
 namespace Verkefni_5.Services.Interfaces
 {

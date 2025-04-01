@@ -1,10 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using SchoolDatabase;
 using Verkefni_5.Repositories.Interfaces;
 using Verkefni_5.Repositories.Implementations;
 using Verkefni_5.Services.Interfaces;
 using Verkefni_5.Services.Implementations;
+using Verkefni_5.Data.Models;
+using Verkefni_5.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

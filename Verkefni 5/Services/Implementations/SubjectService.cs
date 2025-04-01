@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using SchoolDatabase;
-using Verkefni_5.DTOs;
+using Verkefni_5.Data.DTOs;
 using Verkefni_5.Repositories.Interfaces;
 using Verkefni_5.Services.Interfaces;
+using Verkefni_5.Data.Models;
+using Verkefni_5.Data;
 
 namespace Verkefni_5.Services.Implementations
 {
